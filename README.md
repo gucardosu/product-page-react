@@ -1,16 +1,27 @@
-# React + Vite
+# 🛒 Kelltech Informática - Product Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma página de produtos construída com **React**, focada em componentização, reutilização de código e estilização dinâmica. Este projeto simula a vitrine de um e-commerce de tecnologia, exibindo periféricos e monitores de forma responsiva.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Listagem Dinâmica:** Os produtos são renderizados dinamicamente a partir de um array de dados usando o método `.map()`.
+* **Componente de Botão Customizável:** Um componente `<Button />` altamente flexível, que aceita propriedades (props) para cor de fundo, cor do texto e tamanho, com fallback para estilos customizados.
+* **Cards de Produto Inteligentes:** O componente `<ProductCard />` exibe informações do produto e inclui lógicas de renderização condicional:
+    * **Badges de Categoria:** A cor da etiqueta muda dinamicamente com base na categoria do produto (ex: Periféricos, Monitor, Promoção).
+    * **Destaque Automático:** Um ícone de fogo (🔥) aparece automaticamente em produtos que custam R$ 500 ou mais, ou que estão na categoria "Promoção".
+* **Layout Responsivo:** Utilização de CSS Flexbox para organizar os cards lado a lado em um grid que se adapta ao tamanho da tela.
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React:** Biblioteca JavaScript para construção da interface de usuário.
+* **CSS3:** Estilização pura, utilizando Flexbox para o layout e variáveis de escopo local para os componentes.
+* **JavaScript (ES6+):** Lógica de componentes, props, desestruturação e arrow functions.
 
-## Expanding the ESLint configuration
+## 📂 Estrutura de Componentes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto foi organizado para manter o código limpo e escalável:
+
+* `ProductsPage`: Página principal (container) que armazena os dados dos produtos e renderiza a grade.
+* `Header`: Cabeçalho simples da loja.
+* `ProductCard`: Estrutura individual de cada item da vitrine.
+* `Button`: Botão reutilizável em toda a aplicação.
