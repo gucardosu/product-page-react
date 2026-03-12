@@ -24,6 +24,13 @@ export default function ProductsPage() {
             categoria: "Monitor",
             img: "/monitor.png",
             price: 1230.00
+        },
+        {
+            id: 4,
+            name: "Headset Gamer RGB",
+            categoria: "Periféricos",
+            img: "/headset.png",
+            price: 350.00
         }
     ]
     

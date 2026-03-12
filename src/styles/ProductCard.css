@@ -85,5 +85,13 @@
 }
 
 .product-button:hover {
-    transform: scale(0.2);
+    transform: scale(0.78);
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+    padding: 20px; 
 }

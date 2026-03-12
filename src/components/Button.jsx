@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export default function Button({
     text,
     onClick,
@@ -10,7 +8,7 @@ export default function Button({
 
     const bgColors = {
         primary: "#ff7a00",
-        sucess: "#10b981",
+        success: "#10b981",
         dark: "#000000",
         light: "#ffffff"
     }
@@ -23,7 +21,7 @@ export default function Button({
 
     const textColors = {
         primary: "#ff7a00",
-        sucess: "#10b981",
+        success: "#10b981",
         dark: "#000000",
         light: "#ffffff"
     }
@@ -35,7 +33,7 @@ export default function Button({
         color: textColors[textColor] || textColor,
         padding: sizes[size] || size,
         border: "none",
-        borderRadies: "8px",
+        borderRadius: "8px",
         fontWeight: "bold",
         cursor: "pointer",
     }

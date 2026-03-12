@@ -1,4 +1,4 @@
-import Button from "./Button"
+import Button from "../components/Button"
 import '../styles/ProductCard.css'
 
 export default function ProductCard({product, highlight}) {
@@ -35,7 +35,11 @@ export default function ProductCard({product, highlight}) {
                     </p>
             </div>
 
-            <Button text="Comprar" onClick={viewProduct}/>
+            <Button text="Comprar" 
+            onClick={viewProduct}
+            bgColor="primary"
+            size="md"
+            />
         </article>
     )
 }
